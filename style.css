@@ -247,5 +247,22 @@ nav li {
 	background-color: #2439ff;
 	background-size: cover;
 	height: 1000px;
-}
+	}
+.social {
+	margin: 0 auto;
+	float: none;
+	position: relative;
+	display: -webkit-box;
+	text-align: center;
+	padding-top: 200px;
+	}
+.social img{
+	padding-left: 40px; 
+	padding-right: 15px;
+	width: 40px;
+	}
+.social p {
+	font-family: 'Noto Sans Bold', sans-serif !important;
+	color: #fff;
+	}
 

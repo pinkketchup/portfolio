@@ -4,43 +4,52 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
-body{
+body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 0;
 	margin: 0; 
 	}
-h1{
+h1	{
 	font-family: 'Open Sans Bold', sans-serif;
 	font-size: 1.8em;
 	letter-spacing: .01em;
 	text-transform: uppercase;
 	margin-bottom: -10px;
 	}
-h2{
+h2	{
 	font-family: 'Noto Sans', sans-serif;
 	font-size: .95em;
 	letter-spacing: .03em;
 	}
-h4{
+h4	{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 4em;
 	margin-top: 34px;
 	margin-bottom: -16px;
 	z-index: 9;
 	}
-h3{
+h3	{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.6em;
-	letter-spacing: .2em;
+	letter-spacing: .26em;
 	z-index: 9;
 	}
-p{
+h5 {
+	font-family: 'Open Sans Bold', sans-serif;
+	font-size: 5.2em; 
+	text-align: center;
+	letter-spacing: .24em;
+	text-transform: uppercase;
+	margin-top: .5em;
+	margin-bottom: .3em;
+	}
+p	{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.2em;
 	line-height: 2em;
 	text-align: left;
 	}
-nav{
+nav	{
 	background-color: transparent;
 	position: fixed;
 	width: 100%;
@@ -50,7 +59,7 @@ nav{
 	letter-spacing: .14em;
 	float: right;
 	}
-nav a{
+nav a {
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -76,7 +85,7 @@ nav li {
   	position: absolute;
 	}
 #intropod {
-	min-height: 700px;
+	min-height: 685px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -95,10 +104,12 @@ nav li {
 	margin-right: auto !important;
 	}
 .me img{
-	width: 400px;
+	width: 390px;
 	margin: 0 auto; 
 	position: relative;
 	top: 20px;
+	border: 12px solid #77c3d6;
+	border-radius: 50%;
 	}
 #triangle-left {
 	width: 0;
@@ -249,20 +260,58 @@ nav li {
 	height: 1000px;
 	}
 .social {
-	margin: 0 auto;
-	float: none;
 	position: relative;
-	display: -webkit-box;
 	text-align: center;
-	padding-top: 200px;
+	z-index: 9;
 	}
 .social img{
 	padding-left: 40px; 
 	padding-right: 15px;
 	width: 40px;
+	float: left;
 	}
 .social p {
-	font-family: 'Noto Sans Bold', sans-serif !important;
-	color: #fff;
+	font-family: 'Open Sans Bold', sans-serif !important;
+	font-size: 2em;
+	color: #000;
+	float: right;
+	line-height: 1;
+	font-weight: bold;
+	z-index: 9;
+	}
+.social :hover{
+	color: #2439ff;
+	cursor: pointer; 
+}
+#twitter {
+	position: absolute;
+	top: 300px;
+	left: 50em;
+	}
+#email {
+	position: absolute;
+	top: 14.5em;
+	left: 19em;
+	}
+#linkedin {
+	position: absolute;
+	top: 36em;
+	left: 22em;
+	}
+#dribble {
+	position: absolute;
+	top: 37em;
+	left: 48em;
+	}
+.contact {
+	position: absolute;
+	float: none;
+/*	background-size: 420px;
+	background-position: center;
+	top: 200px; */
+
+	}
+.contact img {
+	height: 550px;
 	}
 

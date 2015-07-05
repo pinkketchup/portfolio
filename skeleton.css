@@ -409,7 +409,12 @@ there.
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+.social {
+  width: 40%;
+  }
+
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}

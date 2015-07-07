@@ -108,6 +108,7 @@ nav li {
 	}
 .introtext{
 	margin: 0 auto;
+	z-index: 9;
 	}
 .triangle-pod {
 	margin: 0 auto;

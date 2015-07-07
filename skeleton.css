@@ -413,7 +413,8 @@ there.
 .social {
   width: 40%;
   }
-
+.me img{
+  width: 220px;
 }
 
 /* Larger than desktop */

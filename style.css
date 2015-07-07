@@ -10,6 +10,7 @@ body {
 	margin: 0; 
 	}
 h1	{
+	color: #000;
 	font-family: 'Open Sans Bold', sans-serif;
 	font-size: 1.8em;
 	letter-spacing: .01em;
@@ -17,11 +18,13 @@ h1	{
 	margin-bottom: -10px;
 	}
 h2	{
+	color: #000;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: .95em;
 	letter-spacing: .03em;
 	}
 h4	{
+	color: #000;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 4em;
 	margin-top: 34px;
@@ -29,12 +32,14 @@ h4	{
 	z-index: 9;
 	}
 h3	{
+	color: #000;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.6em;
 	letter-spacing: .26em;
 	z-index: 9;
 	}
 h5 {
+	color: #000;
 	font-family: 'Open Sans Bold', sans-serif;
 	font-size: 5.2em; 
 	text-align: center;
@@ -44,10 +49,18 @@ h5 {
 	margin-bottom: .3em;
 	}
 p	{
+	color: #000;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.2em;
 	line-height: 2em;
 	text-align: left;
+	}
+a 	{
+	color: #2439ff;
+	text-decoration: none;
+	}
+a:hover {
+	color: #c5e3eb;
 	}
 nav	{
 	background-color: transparent;
@@ -61,6 +74,7 @@ nav	{
 	}
 nav a {
 	color: #fff;
+	font-size: 1.3em;
 	text-transform: uppercase;
 	text-decoration: none;
 	}
@@ -156,6 +170,13 @@ nav li {
 	text-decoration: none;
 	font-size: 1.2em;
 	line-height: 2em;
+	}
+.button:hover {
+	color: #fff;
+	background-color: #000;
+	}
+.button a:hover {
+	color: #fff;
 	}
 .back {
 	margin: 20px;

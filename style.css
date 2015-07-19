@@ -1,4 +1,5 @@
 @import url("skeleton.css");
+@import url("normalize.css");
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
@@ -8,6 +9,8 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 0;
 	margin: 0; 
+	overflow-x: -moz hidden;
+	overflow-x: hidden; 
 	}
 h1	{
 	color: #000;
@@ -89,13 +92,15 @@ nav li {
   	margin-left: 40px;
   	margin-top: 30px;
 	}
-.top{
+.top {
 	width: 100%;
 	float: right;
 	margin: 0 auto;
   	padding: 0 20px;
   	box-sizing: border-box;
   	-webkit-transform: rotate(-21deg);
+  	-moz-transform: rotate(-21deg); /* IE 9 */
+    -webkit-transform: rotate(-21deg); /* Chrome, Safari, Opera */
   	position: absolute;
 	}
 #intropod {
@@ -110,16 +115,13 @@ nav li {
 	margin: 0 auto;
 	z-index: 9;
 	}
-.triangle-pod {
-	margin: 0 auto;
-	}
 .center{
 	display: block;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	}
 .me img{
-	width: 390px;
+	width: 350px;
 	margin: 0 auto; 
 	position: relative;
 	top: 20px;
@@ -129,17 +131,18 @@ nav li {
 #triangle-left {
 	width: 0;
 	height: 0;
-	top: -150px;
+	top: -183px;
 	left: -125px;
 	border-left: -35px solid transparent;
 	border-right: 815px solid transparent;
 	/*border-bottom: 505px solid #2439ff;*/
 	border-top: 800px solid #2439ff;
 	position: absolute;
-	-ms-transform: rotate(22deg); /* IE 9 */
+	-moz-transform: rotate(22deg); /* IE 9 */
     -webkit-transform: rotate(22deg); /* Chrome, Safari, Opera */
-    transform: rotate(22deg)
+    transform: rotate(22deg);
     z-index:0;
+    background-size: cover;
 	}	
 #triangle-right {
 	width: 0;
@@ -150,10 +153,11 @@ nav li {
 	border-top: 550px solid #c5e3eb;
 	float: right;
 	position: absolute;
-	-ms-transform: rotate(0deg); /* IE 9 */
+	-moz-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);
-    z-index: 0;
+    z-index: -1;
+    background-size: cover;
 	}
 .about {
 	display: none;
@@ -196,6 +200,11 @@ nav li {
 .proj-title p { 
 	font-size: 1em;
 	}
+.title {
+	display: block;
+	width: 100%; 
+	margin-left: 0;
+	}
 .title img{
 	float: right;
 	padding-left: 30px;
@@ -221,7 +230,7 @@ nav li {
 	}
 .proj-img img {
 	margin: 0 auto;
-	max-width: 1000px;
+	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	}
@@ -240,6 +249,9 @@ nav li {
 	font-size: .8em;
 	letter-spacing: .04em;
 	}
+.mobile-button {
+	display: none;
+}
 .web p{
 	font-family: 'Open Sans Bold', sans-serif;
 	text-transform: uppercase;
@@ -335,5 +347,27 @@ nav li {
 	}
 .contact img {
 	height: 550px;
+	}
+.p-desc {
+	padding: 60px 10px 0 50px;
+	}
+.p-desc h4 {
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	}
+.thumbs {
+	overflow-y: auto 
+	}
+.thumbs img{
+	margin: 0 auto;
+	}
+.thumbs .wrap {
+	float: left;
+	position: relative;
+	padding: 5px;
+	}
+.thumbs .info {
+	text-align: center !important;
+	margin-top: 20px; 
 	}
 

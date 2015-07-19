@@ -14,7 +14,8 @@
   <body>
   <nav class="top">
     <ul>
-      <li><a href="projects.html" class="nav">Projects</a></li>
+      <li class="mobile-button"><a href="#">Menu</a></li>
+      <li><a href="projects.html" class="nav">Portfolio</a></li>
     <!--   <li><a href="#" class="nav">Resume</a></li> -->
       <li><a href="contact.html" class="nav">Contact</a></li>
     </ul>
@@ -41,7 +42,7 @@
         <div class="twelve columns center">
           <p>I live and work in San Francisco. You may find me drawing in my sketchbook, practicing calligraphy and lettering, doing yoga, tinkering with DIY projects, coding websites, and exploring the great outdoors. </p>
 
-          <p>I’m the UX/Visual Designer at Upsight – a mobile marketing and analytics startup serving top grossing gaming and e-commerce mobile apps. At Upsight, I design new features for our web dashboard from specs to wireframes to full mockups to code complete. I also lead our user testing process. I designed and coded a substantial part of the Upsight website along with our interactive style guide. On the product marketing side I design whitepapers, sales decks, emails, blog content, and new graphics for our website. In November 2013, Kontagent (where I originally worked) merged with Playhaven to form Upsight. After the merger, I helped rebrand Upsight, redesign our current dashboard and product, establish the new brand look and feel, and design and code the UI style guide. </p>
+          <p>I’m the UX/Visual Designer at Upsight – a mobile marketing and analytics startup serving top grossing gaming and e-commerce mobile apps. At Upsight, I design new UI features for our web dashboard from specs to wireframes to full mockups to code complete. I also lead our user testing process. I designed and coded a substantial part of the Upsight website along with our interactive style guide. On the product marketing side I design whitepapers, sales decks, emails, and new visuals for our website. I helped rebrand Upsight, redesign our current dashboard and product, establish the new brand look and feel, and design and code the UI style guide. </p>
 
 <p>Before Upsight, I worked at OMGPOP. At OMGPOP, I designed UI elements for DrawSomething, the fastest growing mobile game that reached <a href="http://www.bbc.com/news/technology-17624172" target="blank">50 million downloads in 50 days.</a> I designed all the assets for our marketing campaign for DrawSomething. My other tasks included, designing ads for OMGPOP's other games and working on UI elements for our web games. Using data and analytics, I was able to redesign game UI to improve gameplay.</p>
 
@@ -57,6 +58,20 @@
 $( ".button" ).click(function() {
   $( ".about" ).slideToggle( "slow" );
 });
+
+$(document).ready(function() {
+  $('.mobile-button a').click(function(e) {
+  $(this).parent().parent().toggleClass('open');
+  $(this).html($(this).html() == 'Close Menu' ? 'Menu' : 'Close Menu');
+    e.preventDefault();
+  });
+});
+//hide mobile menu
+//show mobile menu when screen size is less than 450px
+//show a menu toggle
+//hide ul elements under menu toggle
+//On click expand mobile menu ul
+//On click collapse mobile menu ul 
 </script>
 </body>
 </html>

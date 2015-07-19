@@ -403,18 +403,55 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media only screen and (max-width: 40em) {
+  .me img {
+  width: 68%;
+  }
+  html{
+    font-size: 13px;
+  }
+  title {
+    display: inline-block;
+    width: 100%;
+}
+  .top {
+    background-color: #2439ff;
+    }
+}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
+/*iPhone6 Plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+html {
+  font-size: 16px;
+  }
 .social {
   width: 40%;
   }
-.me img{
-  width: 220px;
+.mobile-button {
+  width: 100%;
+  background-color: #2439ff;
+  color: #fff;
+  }
+.mobile-button a{
+  position: absolute;
+  left: -999em;
+  }
+nav ul.mobile-button.open li.mobile-button a {
+  width: 100%;
+  background: #2439ff;
+  color: #fff;
+  }
+nav ul.open li {
+  width: 100%;
+  }
+nav ul.open a {
+  position: static;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
 }
 
 /* Larger than desktop */
